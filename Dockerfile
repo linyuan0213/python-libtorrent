@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     python3-wheel
 
 # 获取 libtorrent 源码
-RUN git clone --branch RC_2_0 --depth 1 https://github.com/arvidn/libtorrent.git /libtorrent
+RUN git clone --recurse-submodules --branch RC_2_0 --depth 1 https://github.com/arvidn/libtorrent.git /libtorrent
 
 WORKDIR /libtorrent
 
