@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y \
     make \
     cmake \
     libboost-system-dev \
-    libboost-chrono-dev \
-    libboost-random-dev \
+    libboost-tools-dev \
+    libboost-dev \
     libssl-dev \
     zlib1g-dev \
     pkg-config \
@@ -15,8 +15,7 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     python3-pip \
     python3-setuptools \
-    python3-wheel \
-    python3-cmake
+    python3-wheel
 
 # 获取 libtorrent 源码
 RUN git clone --branch RC_2_0 --depth 1 https://github.com/arvidn/libtorrent.git /libtorrent
