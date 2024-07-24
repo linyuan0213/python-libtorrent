@@ -1,4 +1,7 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
+
+# 设置环境变量以非交互方式配置 tzdata
+ENV DEBIAN_FRONTEND=noninteractive
 
 # 安装编译 libtorrent 和 Python 包所需的依赖
 RUN apt-get update && apt-get install -y \
