@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     libboost-system-dev \
     libboost-tools-dev \
     libboost-dev \
+    libboost-python-dev \
     libssl-dev \
     zlib1g-dev \
     pkg-config \
