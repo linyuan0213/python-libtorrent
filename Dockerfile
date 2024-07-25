@@ -37,5 +37,5 @@ WORKDIR /libtorrent/bindings/python
 
 RUN python3 setup.py bdist_wheel
 
-# 将编译结果复制到输出目录
-RUN mkdir -p /output && cp dist/*.whl /output/
+# 设置输出目录并赋予权限
+RUN mkdir -p /output && chmod -R 777 /output && cp dist/*.whl /output/
